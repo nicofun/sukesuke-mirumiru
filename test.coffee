@@ -20,7 +20,7 @@ for key in Object.keys(config)
 		return
 
 token = config.token
-reg = "^\<\< ([\s\S]*)$"
+reg = "^&lt;&lt; ([\\s\\S]*)$"
 regexp = new RegExp(reg)
 
 #rtm = new RtmClient token, {logLevel:'debug'}
