@@ -1,0 +1,21 @@
+{
+  "name": "kanshi",
+  "version": "0.0.1",
+  "description": "Kanshi suruyo",
+  "main": "index.js",
+  "dependencies": {
+    "@slack/client": "^3.6.0"
+  },
+  "devDependencies": {
+    "config": "^1.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "conoha:~/Bots/Kanshi"
+  },
+  "author": "isaac",
+  "license": "ISC"
+}
