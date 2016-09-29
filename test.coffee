@@ -28,7 +28,10 @@ rtm = new RtmClient token
 rtm.start()
 
 rtm.on RTM_EVENTS.MESSAGE, (m)->
-	# monitoredUser -> observerChannel
+    if not m.text?
+        return
+
+  # monitoredUser -> observerChannel
     if m.channel == config.monitoredChannel && m.user == config.monitoredUser
         rtm.sendMessage "#{config.monitoredUsername} to #{config.observer1name}\n\n>>>#{m.text}", config.observerChannel, messageSent = ->
             #option
